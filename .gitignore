@@ -1,0 +1,22 @@
+# Configurações do ambiente
+.env
+.env.*
+
+# Dependências
+vendor/
+node_modules/
+
+# Arquivos temporários
+*.tmp
+*.log
+
+# Sistema operacional
+Thumbs.db
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+
+# Cache
+*.cache
