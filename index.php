@@ -107,43 +107,56 @@
 <div class="conteudo">
 <?php
 
-require_once 'Pessoa.php';
-require_once 'Cliente.php';
-require_once 'Barbeiro.php';
-require_once 'Servico.php';
-require_once 'Agendamento.php';
+require_once 'classes/Pessoa.php';
+require_once 'classes/Cliente.php';
+require_once 'classes/Barbeiro.php';
+require_once 'classes/Servico.php';
+require_once 'classes/Agendamento.php';
 
     
 $cliente1 = new Cliente("João Silva", "9999-1111", "joao@email.com", "Degradê");
 $barbeiro1 = new Barbeiro("Marcos", "8888-2222", "marcos@email.com", "Corte e Barba");
 $servico1 = new Servico("Corte Degradê + Barba", 50.00, 45);
 $agendamento1 = new Agendamento($cliente1, $barbeiro1, $servico1, "30/09/2026 às 14:00");
+$cliente2 = new cliente("Arthur Pires", "55991399998", "tutui@gmail.com", "Degradê");
+$barbeiro2 = new Barbeiro("Kleber", "9999-9999", "klebinho@gmail.com", "Corte e Sombrancelha");
+$servico2 = new Servico("Corte Degradê", 25.00, 20);
+$agendamento2 = new Agendamento($cliente2, $barbeiro2, $servico2, "01/10/2026 às 18:00");
 
 echo "<h1>Sistema de Barbearia</h1>";
 
 echo "<hr>";
 $cliente1->exibirDados();
+$cliente2->exibirDados();
 
 echo "<hr>";
 $barbeiro1->exibirDados();
+$barbeiro2->exibirDados();
 
 echo "<hr>";
 $servico1->exibirDados();
+$servico2->exibirDados();
 
 echo "<hr>";
 $agendamento1->exibirDados();
+$agendamento2->exibirDados();
 
 echo "<hr>";
 echo "<h2>Finalizando Atendimento</h2>";
 
 $agendamento1->finalizarAtendimento();
+$agendamento2->finalizarAtendimento();
 $agendamento1->exibirDados();
+$agendamento2->exibirDados();
 
 echo "<hr>";
-echo "<h2>Desativando Cliente</h2>";
+echo "<h2>Desativando Clientes</h2>";
 
 $cliente1->desativar();
+$cliente2->desativar();
+
 $cliente1->exibirDados();
+$cliente2->exibirDados();
 
 ?>
 </div>
