@@ -1,1 +1,23 @@
+# Arquivos de configuração e ambiente
+.env
+.env.*
+
+# Dependências
+/vendor/
+/node_modules/
+
+# Arquivos temporários
+*.log
+*.tmp
+*.cache
+
+# Sistema operacional
+Thumbs.db
+.DS_Store
+
+# Configurações de editores
+.vscode/
+.idea/
+
+# Arquivo utilizado somente para entrega
 link-repositorio.txt
