@@ -44,10 +44,12 @@ O projeto foi modelado utilizando os pilares cruciais da Programação Orientada
 ## 📂 Organização Geral do Projeto
 
 ```text
-.
-├── Pessoa.php       # Classe base contendo atributos e métodos comuns a pessoas
-├── Cliente.php      # Subclasse de Pessoa com preferências e status de conta
-├── Barbeiro.php     # Subclasse de Pessoa com especialidades do profissional
-├── Servico.php      # Classe responsável pela gestão de serviços e preços
-├── Agendamento.php  # Classe principal para criação e gestão de atendimentos
-└── index.php        # Script principal que executa e demonstra o funcionamento do sistema
+ .
+├── classes/
+│   ├── Pessoa.php       # Classe base contendo atributos e métodos comuns a pessoas
+│   ├── Cliente.php      # Subclasse de Pessoa com preferências e status de conta
+│   ├── Barbeiro.php     # Subclasse de Pessoa com especialidades do profissional
+│   ├── Servico.php      # Classe responsável pela gestão de serviços e preços
+│   └── Agendamento.php  # Classe principal para criação e gestão de atendimentos
+├── index.php            # Script principal que executa e demonstra o funcionamento do sistema
+└── README.md            # Documentação principal do repositório
